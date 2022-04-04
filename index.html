@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- axios API -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" type="text/javascript"></script>
+
     <!-- Vue JS -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     
@@ -27,7 +30,16 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Hello, world!</h1>
+    <div id="app">
+        <h1>API Practice</h1>
+        <div id="email-container">
+            <ol>
+                <li v-for="email in 10">
+                    {{emails[email - 1]}}
+                </li>
+            </ol>
+        </div>
+    </div>
 
 
     <script src="./script.js"></script>
