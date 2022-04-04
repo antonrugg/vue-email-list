@@ -33,11 +33,13 @@
     <div id="app">
         <h1>API Practice</h1>
         <div id="email-container">
+            
             <ol>
-                <li v-for="email in 10">
+                <li v-if="emails.length === 10" v-for="email in 10">
                     {{emails[email - 1]}}
                 </li>
             </ol>
+            
         </div>
     </div>
 
